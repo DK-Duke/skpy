@@ -10,8 +10,8 @@ from skpy import SkypeAuthException
 from skpy import Skype
 sk = Skype(connect=False)
 sk.conn.setTokenFile(".tokens-app")
-username="duke_0124@hotmail.com"
-password="!QAZXSw20124"
+username="your account name"
+password="password"
 try:
     sk.conn.readToken()
 except SkypeAuthException:
@@ -23,6 +23,6 @@ contact =sk.contacts
 #for i in contact:
 #     print(i)
      
-ch = sk.contacts["live:.cid.4b5d2e83b90120aa"].chat
+ch = sk.contacts["live:對象ID"].chat
  
 ch.sendMsg("憑證剩下XX天，請記得安排")
